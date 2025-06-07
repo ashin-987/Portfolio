@@ -1,0 +1,21 @@
+/* Updated layout: 3 columns for large screens, 2 for tablets, 1 for mobile */
+#skills .skill__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  #skills .skill__container {
+    gap: 1.5rem;
+  }
+}
+
+/* Optional: Reduce padding for really small screens */
+@media (max-width: 480px) {
+  #skills .skill__container {
+    gap: 1rem;
+  }
+}
